@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        main {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        #booking-details {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Ticket Booking Website</h1>
+    </header>
+
+    <main>
+        <h2>Book Tickets</h2>
+        <form action="/book" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="numTickets">Number of Tickets:</label>
+            <input type="number" id="numTickets" name="numTickets" min="1" required><br>
+
+            <button type="submit">Book Now</button>
+        </form>
+
+        <!-- Display booking details here -->
+        <div id="booking-details">
+            <!-- Booking details will be displayed here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ticket Booking Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
